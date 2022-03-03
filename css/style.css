@@ -1,0 +1,25 @@
+/* Reset */
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto 0;
+    border: 1px solid black;
+}
+.row-1 {
+    width: calc(100%/3 - 8px);
+}
+.indumento img{
+    width: 100%;
+}
+.indumento{
+    display: inline-block;
+    border: 2px solid orange;
+    width: 100%;
+    margin: 0 4px;
+
+}
