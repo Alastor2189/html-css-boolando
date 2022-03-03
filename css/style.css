@@ -3,23 +3,65 @@
     margin: 0%;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial;
 }
 .container{
     width: 90%;
-    max-width: 1000px;
-    margin: auto 0;
+    max-width: 1250px;
+    margin: auto 3em;
     border: 1px solid black;
 }
-.row-1 {
-    width: calc(100%/3 - 8px);
+.row {
+    width: 100%;
 }
 .indumento img{
     width: 100%;
 }
 .indumento{
     display: inline-block;
-    border: 2px solid orange;
-    width: 100%;
+    border: 2px solid;
+    width: calc(100% / 3 - 14px);
     margin: 0 4px;
+    vertical-align: top;
+    position: relative;
+}
+.cuore{
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    border: 2px solid white;
+    background-color: white;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+
+}
+.discount{
+   
+    text-align: center;
+    color: white;
+    background-color: red;
+    position: absolute;
+    bottom: 40px;
+    width: 35px;
+    height: 20px;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 19px;
+}
+.eco{
+    text-align: center;
+    color: white;
+    background-color: green;
+    position: absolute;
+    bottom: 40px;
+    left: 42px;
+    width: 85px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 19px;
+    
 
 }
