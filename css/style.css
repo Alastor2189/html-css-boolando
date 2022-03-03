@@ -16,13 +16,15 @@
 .indumento img{
     width: 100%;
 }
+/* immagine singola */
 .indumento{
     display: inline-block;
     width: calc(100% / 3 - 14px);
-    margin: 0 4px;
+    margin: 0 4px 35px;
     vertical-align: top;
     position: relative;
 }
+/* etichetta cuore */
 .cuore{
     color: black;
     position: absolute;
@@ -33,8 +35,10 @@
     width: 23px;
     height: 23px;
     text-align: center;
+    z-index: 2;
 
 }
+/* etichetta sconto */
 .discount{
    
     text-align: center;
@@ -47,7 +51,9 @@
     font-weight: bold;
     font-size: 11px;
     line-height: 19px;
+    z-index: 2;
 }
+/* etichetta eco */
 .eco{
     text-align: center;
     color: white;
@@ -60,6 +66,7 @@
     font-size: 12px;
     font-weight: bold;
     line-height: 19px;
+    z-index: 2;
     
 
 }
@@ -71,7 +78,23 @@
 .price2{
     text-decoration: line-through;
 }
+/* selettore posizione seconda foto di ogni indumento */
 .indumento:last-child .eco{
     left: 0;
 
+}
+/* selettore per nascondere la seconda foto di ogni indumento */
+.indumento img:nth-of-type(2) {
+    display: none;
+}
+/* selettore per visualizzare la seconda foto */
+.indumento:hover img:nth-of-type(2) {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+/* selettore che nasconde la prima foto */
+.indumento img:first-of-type{
+    z-index: 0;
 }
